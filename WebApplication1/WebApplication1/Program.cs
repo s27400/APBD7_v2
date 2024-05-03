@@ -11,6 +11,9 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<IWarehouseRepository, WarehouseRepository>();
 builder.Services.AddScoped<IWarehouseService, WarehouseService>();
 
+builder.Services.AddScoped<IZadanie2Repo, Zadanie2Repo>();
+builder.Services.AddScoped<IZadanie2Service, Zadanie2Service>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
